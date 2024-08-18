@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive-Pro</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo_details">
+      <i class="bx bx-archive icon"></i>
+      <div class="logo_name">Archive-Pro</div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+
+    <ul class="nav-list">
+      <li>
+        <a href="#" onclick="loadPage('Home.html'); return false;">
+          <i class='bx bx-home'></i>
+          <span class="link_name">Tableau de bord</span>
+        </a>
+        <span class="tooltip">Tableau de bord</span>
+      </li>
+
+      <li>
+        <a href="#" onclick="loadPage('Gestionnaire.html'); return false;">
+          <i class="bx bx-folder"></i>
+          <span class="link_name">Gestionnaire de fichiers</span>
+        </a>
+        <span class="tooltip">Gestionnaire de fichiers</span>
+      </li>
+
+      <li>
+        <a href="#" onclick="loadPage('Scannage.html'); return false;">
+          <i class="bx bx-printer"></i>
+          <span class="link_name">Scannage</span>
+        </a>
+        <span class="tooltip">Scannage</span>
+      </li>
+
+      <li>
+        <a href="#" onclick="loadPage('Compression.html'); return false;">
+          <i class='bx bxs-file-archive'></i>
+          <span class="link_name">Compression de fichiers</span>
+        </a>
+        <span class="tooltip">Compression de fichiers</span>
+      </li>
+      
+      <li>
+        <a href="#" onclick="loadPage('Recherche.html'); return false;">
+          <i class='bx bx-file-find'></i>
+          <span class="link_name">Recherche de documents</span>
+        </a>
+        <span class="tooltip">Recherche de documents</span>
+      </li>
+      
+      <li>
+        <a href="#" onclick="loadPage('Compte.html'); return false;">
+          <i class='bx bxs-user-account'></i>
+          <span class="link_name">Compte d'utilisateurs</span>
+        </a>
+        <span class="tooltip">Compte d'utilisateurs</span>
+      </li>
+      
+      <li>
+        <a href="#" onclick="loadPage('Parametre.html'); return false;">
+          <i class="bx bx-cog"></i>
+          <span class="link_name">Paramètre</span>
+        </a>
+        <span class="tooltip">Paramètre</span>
+      </li>
+      
+      <li class="profile">
+        <div class="profile_details">
+          <img src="../IMAGES/KINDER.jpg" alt="profile image">
+          <div class="profile_content">
+            <div class="name">Ndaoula Kinder<br> Mahamat</div>
+            <div class="designation">Admin</div>
+          </div>
+        </div>
+        <i class="bx bx-log-out" id="log_out"></i>
+      </li>
+
+    </ul>
+  </div>
+
+  <section class="home-section">
+    <header>
+      <div class="icons-header">
+         <img src="../IMAGES/calendar-icon.png" alt="Calendrier">
+          <img src="../IMAGES/message-icon.png" alt="Messager">
+      </div>
+      <div class="notification-header">
+        <input type="text" placeholder="Search...">
+          <img src="../IMAGES/notification-icon.png" alt="Notifications">
+      </div>
+  </header>
+    <div class="text">Dashboard</div>
+    <!-- Container for dynamically loaded content -->
+    <div id="content">Chargement...</div>
+  </section>
+  <script src="../JS/script.js"></script>
+</body>
+</html>
